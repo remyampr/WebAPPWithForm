@@ -1,0 +1,237 @@
+body {
+  background-image: url(images/background-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-head {
+  text-align: center;
+  margin-top: 20px;
+}
+.form-container {
+  max-width: 50%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #001b2f, #214255);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.signup-form,
+.login-form {
+  padding: 25px;
+}
+.signup-input-group {
+  margin-bottom: 8px;
+}
+.signup-name,
+.signup-email,
+.signup-password,
+.confirm-password,
+.signup-date,
+.login-email,
+.login-password {
+  background-color: #002b44;
+  color: #f5f5f5;
+  border: 1px solid #214255;
+  /* border-radius: 5px;  */
+  padding: 10px;
+  font-size: 15px;
+}
+
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+}
+.form-floating label {
+  font-size: 12px;
+}
+
+.form-floating > .form-control:focus + label,
+.form-floating > .form-control:not(:placeholder-shown) + label {
+  color: #0096ff;
+}
+
+.form-control:focus {
+  background-color: #003354;
+  border-color: #0096ff;
+  color: #f5f5f5;
+  outline: none;
+  box-shadow: 0 0 2px #0096ff;
+}
+
+.signup-date {
+  color: #f5f5f5;
+}
+
+.gender label {
+  font-size: 16px;
+}
+
+.terms-checkbox a {
+  font-size: 12px;
+  text-decoration: none;
+}
+.signup-button,
+.login-button {
+  width: 100%;
+}
+
+.login-button {
+  margin-top: 20px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+.login-form {
+  margin-top: 0px;
+}
+.login-head {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+.login-form-container {
+  margin-top: 0;
+}
+.container-login {
+  display: none;
+}
+
+/* Login Form*/
+
+.movie-app-container {
+  display: none;
+  /* display  none for signup and login */
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  color: #f5f5f5;
+  background: linear-gradient(135deg, #001b2f, #214255);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+/*  */
+.logged-username h3 {
+  font-size: 18px;
+}
+
+.welcome-box .logo-button {
+  font-size: 26px;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: all linear 0.3s;
+}
+.welcome-box img {
+  width: 50px;
+}
+.welcome-box .logo-button:hover {
+  color: #ccc;
+  font-size: 27px;
+}
+
+.navlink.active {
+  color: #f5f5f5;
+}
+
+.input-group {
+  flex: 0 0 550px;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-box {
+  width: 80%;
+  border: none;
+  color: #285a72;
+  caret-color: #2d5468;
+}
+.input-box:focus {
+  outline: none;
+}
+.search-button {
+  color: #2d5468;
+}
+.input-group:hover > .search-button {
+  background: #285a72;
+  color: #fff;
+}
+
+.log-out-button {
+  text-decoration: none;
+  margin-right: 40px;
+  color: #f5f5f5;
+  transition: linear 0.3s;
+}
+.log-out-button:hover {
+  color: #ccc;
+  scale: 1.1;
+}
+
+.main-content {
+  margin-top: 100px;
+}
+
+.movie-container-card {
+  width: 15rem;
+  margin-bottom: 8px;
+  height: 330px;
+  color: #1b3a52;
+}
+.movie-container-card img {
+  height: 250px;
+  transition: ease-in 1s;
+}
+.movie-container-card img:hover{
+  transform: rotatey(180deg);
+}
+.result-container {
+  display: flex;
+  justify-content: center;
+}
+.result-container h1 {
+  margin-top: 100px;
+}
+.result-container p {
+  color: #285a72;
+}
+.result-container .movie-title {
+  color: #193b4b;
+  font-weight: 700;
+}
+@media screen and (max-width: 770px) {
+  .movie-poster {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 994px) {
+  .movie-card {
+    padding-inline-start: 90px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .input-group {
+    /* width: 60%; */
+    flex: auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .movie-container-card {
+    margin: 0 auto;
+  }
+  .movie-card-col {
+    margin-bottom: 5px;
+  }
+}
